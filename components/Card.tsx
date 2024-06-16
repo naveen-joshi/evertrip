@@ -9,6 +9,7 @@ interface CardProps {
   description: string;
   imageSrc: string;
   duration: string;
+  id: string;
 }
 
 const Card: React.FC<CardProps> = ({
@@ -17,6 +18,7 @@ const Card: React.FC<CardProps> = ({
   description,
   imageSrc,
   duration,
+  id,
 }) => {
   const router = useRouter();
 
@@ -43,7 +45,7 @@ const Card: React.FC<CardProps> = ({
         <p>{description}</p>
         <p className="font-semibold">{duration}</p>
       </div>
-      <button className="btn-primary" onClick={() => navigateToDetails(title)}>
+      <button className="btn-primary" onClick={() => navigateToDetails(id)}>
         View Details
       </button>
     </div>

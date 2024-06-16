@@ -2,44 +2,51 @@
 
 import React, { useEffect, useState } from "react";
 import { useParams } from "next/navigation";
+import {
+  Accordion,
+  AccordionItem,
+  AccordionTrigger,
+  AccordionContent,
+} from "@radix-ui/react-accordion";
+import { tours } from "@/constants";
 
-interface TripDetails {
-  title: string;
-  description: string;
-  itinerary: string[];
-  faqs: { question: string; answer: string }[];
+interface FAQ {
+  question: string;
+  answer: string;
 }
 
-const fetchTripDetails = async (id: string): Promise<TripDetails> => {
-  // Simulate a fetch request to get trip details
-  return {
-    title: decodeURIComponent(id),
-    description: "This is a sample description for the trip.",
-    itinerary: [
-      "Day 1: Arrival and Welcome",
-      "Day 2: City Tour",
-      "Day 3: Mountain Biking",
-      "Day 4: Beach Day",
-      "Day 5: Cultural Activities",
-      "Day 6: Free Day",
-      "Day 7: Departure",
-    ],
-    faqs: [
-      {
-        question: "What should I pack?",
-        answer: "You should pack casual clothes, biking gear, and beachwear.",
-      },
-      {
-        question: "Is there a guide?",
-        answer: "Yes, there will be a guide for the entire trip.",
-      },
-    ],
-  };
+interface ItineraryItem {
+  title: string;
+  description: string;
+}
+
+interface Package {
+  id: string;
+  name: string;
+  price: number;
+  duration: string;
+  description: string;
+  image: string;
+  faqs: FAQ[];
+  inclusions: string[];
+  exclusions: string[];
+  itinerary: ItineraryItem[];
+}
+
+const fetchTripDetails = async (id: string): Promise<Package | null> => {
+  for (const tour of tours) {
+    for (const pkg of tour.packages) {
+      if (pkg.id === id) {
+        return pkg;
+      }
+    }
+  }
+  return null;
 };
 
 const DetailsPage: React.FC = () => {
   const { id } = useParams() as { id: string };
-  const [tripDetails, setTripDetails] = useState<TripDetails | null>(null);
+  const [tripDetails, setTripDetails] = useState<Package | null>(null);
 
   useEffect(() => {
     const getTripDetails = async () => {
@@ -56,13 +63,51 @@ const DetailsPage: React.FC = () => {
   return (
     <section className="bg-[#f2fdff]">
       <div className="container mx-auto p-4 max-container padding-container">
-        <h2 className="text-2xl font-bold mb-4">{tripDetails.title}</h2>
-        <p className="mb-4">{tripDetails.description}</p>
+        <h2 className="text-2xl font-bold mb-4">
+          {tripDetails.name} - &#8377;{tripDetails.price}
+        </h2>
+        <p className="mb-4">
+          <span className="font-semibold">Popular Locations: </span>{" "}
+          {tripDetails.description}
+        </p>
 
         <h3 className="text-xl font-semibold mb-2">Itinerary</h3>
-        <ul className="list-disc list-inside mb-4">
+        <ul className="mb-4">
           {tripDetails.itinerary.map((item, index) => (
-            <li key={index}>{item}</li>
+            <div
+              className="rounded-xl p-4 my-2 border border-black"
+              key={index}
+            >
+              <Accordion
+                key={index}
+                type="single"
+                collapsible
+                className="w-full"
+              >
+                <AccordionItem value={"item-" + index}>
+                  <AccordionTrigger>
+                    <p className="font-bold">{item.title}</p>
+                  </AccordionTrigger>
+                  <AccordionContent>
+                    <p className="mt-3">{item.description}</p>
+                  </AccordionContent>
+                </AccordionItem>
+              </Accordion>
+            </div>
+          ))}
+        </ul>
+
+        <h3 className="text-xl font-semibold mb-2">Inclusions</h3>
+        <ul className="mb-4 list-disc list-inside">
+          {tripDetails.inclusions.map((inclusion, index) => (
+            <li key={index}>{inclusion}</li>
+          ))}
+        </ul>
+
+        <h3 className="text-xl font-semibold mb-2">Exclusions</h3>
+        <ul className="mb-4 list-disc list-inside">
+          {tripDetails.exclusions.map((exclusion, index) => (
+            <li key={index}>{exclusion}</li>
           ))}
         </ul>
 

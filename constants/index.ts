@@ -88,51 +88,393 @@ export const tours = [
     state: "Leh Ladakh",
     packages: [
       {
-        name: "7 Dyas Summer Bike Trip",
+        id: "ladakh-1",
+        name: "7 Days Summer Bike Trip",
         price: 22000,
         duration: "6N/7D",
         description: "Pangong - Hanle - Diskit",
         image: "/tour-1.jpg",
+        faqs: [
+          {
+            question: "What should I pack?",
+            answer: "You should pack casual clothes, biking gear, and shoes.",
+          },
+          {
+            question: "Is there a guide?",
+            answer: "Yes, there will be a guide for the entire trip.",
+          },
+        ],
+        inclusions: [
+          "3 Star Hotel",
+          "Meal Plan: Breakfast , Dinner",
+          "Taxi: non Ac private cab",
+          "Inner Line Permits",
+          "Tour assistance",
+          "No other clients",
+          "Totally private tour",
+        ],
+        exclusions: [
+          "Additional vehicles",
+          "Activities (Camel ride, ATV, etc.)",
+          "Any personal expenses at Hotel or Outside.",
+          "Entry fees or tickets.",
+          "GST will be applicable as per prevailing rates",
+        ],
+        itinerary: [
+          {
+            title: "Day 1: Arrival and Welcome",
+            description: "Welcome to Leh Ladakh",
+          },
+          {
+            title: "Day 2: Sightseeing in Leh",
+            description: "Visit Shanti Stupa, Leh Palace, and local markets.",
+          },
+          {
+            title: "Day 3: Leh to Nubra Valley",
+            description: "Drive to Nubra Valley via Khardung La Pass.",
+          },
+          {
+            title: "Day 4: Nubra Valley to Pangong Lake",
+            description: "Travel to Pangong Lake and enjoy the scenic beauty.",
+          },
+          {
+            title: "Day 5: Pangong Lake to Hanle",
+            description: "Journey to Hanle, visit Hanle Monastery.",
+          },
+          {
+            title: "Day 6: Hanle to Diskit",
+            description: "Drive to Diskit, explore Diskit Monastery.",
+          },
+          {
+            title: "Day 7: Departure from Leh",
+            description: "Return to Leh for departure.",
+          },
+        ],
       },
       {
-        name: "7 Dyas Summer Bike Trip",
+        id: "ladakh-2",
+        name: "7 Days Summer Bike Trip",
         price: 22000,
         duration: "6N/7D",
         description: "Pangong - Hanle - Diskit",
         image: "/tour-1.jpg",
+        faqs: [
+          {
+            question: "What should I pack?",
+            answer: "You should pack casual clothes, biking gear, and shoes.",
+          },
+          {
+            question: "Is there a guide?",
+            answer: "Yes, there will be a guide for the entire trip.",
+          },
+        ],
+        inclusions: [
+          "3 Star Hotel",
+          "Meal Plan: Breakfast , Dinner",
+          "Taxi: non Ac private cab",
+          "Inner Line Permits",
+          "Tour assistance",
+          "No other clients",
+          "Totally private tour",
+        ],
+        exclusions: [
+          "Additional vehicles",
+          "Activities (Camel ride, ATV, etc.)",
+          "Any personal expenses at Hotel or Outside.",
+          "Entry fees or tickets.",
+          "GST will be applicable as per prevailing rates",
+        ],
+        itinerary: [
+          {
+            title: "Day 1: Arrival and Welcome",
+            description: "Welcome to Leh Ladakh",
+          },
+          {
+            title: "Day 2: Sightseeing in Leh",
+            description: "Visit Shanti Stupa, Leh Palace, and local markets.",
+          },
+          {
+            title: "Day 3: Leh to Nubra Valley",
+            description: "Drive to Nubra Valley via Khardung La Pass.",
+          },
+          {
+            title: "Day 4: Nubra Valley to Pangong Lake",
+            description: "Travel to Pangong Lake and enjoy the scenic beauty.",
+          },
+          {
+            title: "Day 5: Pangong Lake to Hanle",
+            description: "Journey to Hanle, visit Hanle Monastery.",
+          },
+          {
+            title: "Day 6: Hanle to Diskit",
+            description: "Drive to Diskit, explore Diskit Monastery.",
+          },
+          {
+            title: "Day 7: Departure from Leh",
+            description: "Return to Leh for departure.",
+          },
+        ],
       },
       {
-        name: "7 Dyas Summer Bike Trip",
+        id: "ladakh-3",
+        name: "7 Days Summer Bike Trip",
         price: 22000,
         duration: "6N/7D",
         description: "Pangong - Hanle - Diskit",
         image: "/tour-1.jpg",
+        faqs: [
+          {
+            question: "What should I pack?",
+            answer: "You should pack casual clothes, biking gear, and shoes.",
+          },
+          {
+            question: "Is there a guide?",
+            answer: "Yes, there will be a guide for the entire trip.",
+          },
+        ],
+        inclusions: [
+          "3 Star Hotel",
+          "Meal Plan: Breakfast , Dinner",
+          "Taxi: non Ac private cab",
+          "Inner Line Permits",
+          "Tour assistance",
+          "No other clients",
+          "Totally private tour",
+        ],
+        exclusions: [
+          "Additional vehicles",
+          "Activities (Camel ride, ATV, etc.)",
+          "Any personal expenses at Hotel or Outside.",
+          "Entry fees or tickets.",
+          "GST will be applicable as per prevailing rates",
+        ],
+        itinerary: [
+          {
+            title: "Day 1: Arrival and Welcome",
+            description: "Welcome to Leh Ladakh",
+          },
+          {
+            title: "Day 2: Sightseeing in Leh",
+            description: "Visit Shanti Stupa, Leh Palace, and local markets.",
+          },
+          {
+            title: "Day 3: Leh to Nubra Valley",
+            description: "Drive to Nubra Valley via Khardung La Pass.",
+          },
+          {
+            title: "Day 4: Nubra Valley to Pangong Lake",
+            description: "Travel to Pangong Lake and enjoy the scenic beauty.",
+          },
+          {
+            title: "Day 5: Pangong Lake to Hanle",
+            description: "Journey to Hanle, visit Hanle Monastery.",
+          },
+          {
+            title: "Day 6: Hanle to Diskit",
+            description: "Drive to Diskit, explore Diskit Monastery.",
+          },
+          {
+            title: "Day 7: Departure from Leh",
+            description: "Return to Leh for departure.",
+          },
+        ],
       },
     ],
   },
   {
-    state: "Himachal Pradesh",
+    state: "Kashmir",
     packages: [
       {
-        name: "7 Dyas Summer Bike Trip",
+        id: "kashmir-1",
+        name: "7 Days Summer Bike Trip",
         price: 22000,
         duration: "6N/7D",
         description: "Pangong - Hanle - Diskit",
         image: "/tour-1.jpg",
+        faqs: [
+          {
+            question: "What should I pack?",
+            answer: "You should pack casual clothes, biking gear, and shoes.",
+          },
+          {
+            question: "Is there a guide?",
+            answer: "Yes, there will be a guide for the entire trip.",
+          },
+        ],
+        inclusions: [
+          "3 Star Hotel",
+          "Meal Plan: Breakfast , Dinner",
+          "Taxi: non Ac private cab",
+          "Inner Line Permits",
+          "Tour assistance",
+          "No other clients",
+          "Totally private tour",
+        ],
+        exclusions: [
+          "Additional vehicles",
+          "Activities (Camel ride, ATV, etc.)",
+          "Any personal expenses at Hotel or Outside.",
+          "Entry fees or tickets.",
+          "GST will be applicable as per prevailing rates",
+        ],
+        itinerary: [
+          {
+            title: "Day 1: Arrival and Welcome",
+            description: "Welcome to Kashmir",
+          },
+          {
+            title: "Day 2: Sightseeing in Srinagar",
+            description: "Visit Dal Lake, Mughal Gardens, and local markets.",
+          },
+          {
+            title: "Day 3: Srinagar to Gulmarg",
+            description: "Drive to Gulmarg and explore the area.",
+          },
+          {
+            title: "Day 4: Gulmarg to Pahalgam",
+            description: "Travel to Pahalgam and enjoy the scenic beauty.",
+          },
+          {
+            title: "Day 5: Pahalgam to Sonmarg",
+            description: "Journey to Sonmarg, visit Thajiwas Glacier.",
+          },
+          {
+            title: "Day 6: Sonmarg to Srinagar",
+            description: "Drive back to Srinagar.",
+          },
+          {
+            title: "Day 7: Departure from Srinagar",
+            description: "Return to Srinagar for departure.",
+          },
+        ],
       },
       {
-        name: "7 Dyas Summer Bike Trip",
+        id: "kashmir-2",
+        name: "7 Days Summer Bike Trip",
         price: 22000,
         duration: "6N/7D",
         description: "Pangong - Hanle - Diskit",
         image: "/tour-1.jpg",
+        faqs: [
+          {
+            question: "What should I pack?",
+            answer: "You should pack casual clothes, biking gear, and shoes.",
+          },
+          {
+            question: "Is there a guide?",
+            answer: "Yes, there will be a guide for the entire trip.",
+          },
+        ],
+        inclusions: [
+          "3 Star Hotel",
+          "Meal Plan: Breakfast , Dinner",
+          "Taxi: non Ac private cab",
+          "Inner Line Permits",
+          "Tour assistance",
+          "No other clients",
+          "Totally private tour",
+        ],
+        exclusions: [
+          "Additional vehicles",
+          "Activities (Camel ride, ATV, etc.)",
+          "Any personal expenses at Hotel or Outside.",
+          "Entry fees or tickets.",
+          "GST will be applicable as per prevailing rates",
+        ],
+        itinerary: [
+          {
+            title: "Day 1: Arrival and Welcome",
+            description: "Welcome to Kashmir",
+          },
+          {
+            title: "Day 2: Sightseeing in Srinagar",
+            description: "Visit Dal Lake, Mughal Gardens, and local markets.",
+          },
+          {
+            title: "Day 3: Srinagar to Gulmarg",
+            description: "Drive to Gulmarg and explore the area.",
+          },
+          {
+            title: "Day 4: Gulmarg to Pahalgam",
+            description: "Travel to Pahalgam and enjoy the scenic beauty.",
+          },
+          {
+            title: "Day 5: Pahalgam to Sonmarg",
+            description: "Journey to Sonmarg, visit Thajiwas Glacier.",
+          },
+          {
+            title: "Day 6: Sonmarg to Srinagar",
+            description: "Drive back to Srinagar.",
+          },
+          {
+            title: "Day 7: Departure from Srinagar",
+            description: "Return to Srinagar for departure.",
+          },
+        ],
       },
       {
-        name: "7 Dyas Summer Bike Trip",
+        id: "kashmir-3",
+        name: "7 Days Summer Bike Trip",
         price: 22000,
         duration: "6N/7D",
         description: "Pangong - Hanle - Diskit",
         image: "/tour-1.jpg",
+        faqs: [
+          {
+            question: "What should I pack?",
+            answer: "You should pack casual clothes, biking gear, and shoes.",
+          },
+          {
+            question: "Is there a guide?",
+            answer: "Yes, there will be a guide for the entire trip.",
+          },
+        ],
+        inclusions: [
+          "3 Star Hotel",
+          "Meal Plan: Breakfast , Dinner",
+          "Taxi: non Ac private cab",
+          "Inner Line Permits",
+          "Tour assistance",
+          "No other clients",
+          "Totally private tour",
+        ],
+        exclusions: [
+          "Additional vehicles",
+          "Activities (Camel ride, ATV, etc.)",
+          "Any personal expenses at Hotel or Outside.",
+          "Entry fees or tickets.",
+          "GST will be applicable as per prevailing rates",
+        ],
+        itinerary: [
+          {
+            title: "Day 1: Arrival and Welcome",
+            description: "Welcome to Kashmir",
+          },
+          {
+            title: "Day 2: Sightseeing in Srinagar",
+            description: "Visit Dal Lake, Mughal Gardens, and local markets.",
+          },
+          {
+            title: "Day 3: Srinagar to Gulmarg",
+            description: "Drive to Gulmarg and explore the area.",
+          },
+          {
+            title: "Day 4: Gulmarg to Pahalgam",
+            description: "Travel to Pahalgam and enjoy the scenic beauty.",
+          },
+          {
+            title: "Day 5: Pahalgam to Sonmarg",
+            description: "Journey to Sonmarg, visit Thajiwas Glacier.",
+          },
+          {
+            title: "Day 6: Sonmarg to Srinagar",
+            description: "Drive back to Srinagar.",
+          },
+          {
+            title: "Day 7: Departure from Srinagar",
+            description: "Return to Srinagar for departure.",
+          },
+        ],
       },
     ],
   },
@@ -140,25 +482,259 @@ export const tours = [
     state: "Rajasthan",
     packages: [
       {
-        name: "7 Dyas Summer Bike Trip",
+        id: "rajasthan-1",
+        name: "7 Days Summer Bike Trip",
         price: 22000,
         duration: "6N/7D",
-        description: "Pangong - Hanle - Diskit",
+        description: "Jaipur - Jodhpur - Udaipur",
         image: "/tour-1.jpg",
+        faqs: [
+          {
+            question: "What should I pack?",
+            answer: "You should pack casual clothes, biking gear, and shoes.",
+          },
+          {
+            question: "Is there a guide?",
+            answer: "Yes, there will be a guide for the entire trip.",
+          },
+        ],
+        inclusions: [
+          "3 Star Hotel",
+          "Meal Plan: Breakfast , Dinner",
+          "Taxi: non Ac private cab",
+          "Tour assistance",
+          "No other clients",
+          "Totally private tour",
+        ],
+        exclusions: [
+          "Additional vehicles",
+          "Activities (Camel ride, ATV, etc.)",
+          "Any personal expenses at Hotel or Outside.",
+          "Entry fees or tickets.",
+          "GST will be applicable as per prevailing rates",
+        ],
+        itinerary: [
+          {
+            title: "Day 1: Arrival and Welcome",
+            description: "Welcome to Jaipur",
+          },
+          {
+            title: "Day 2: Sightseeing in Jaipur",
+            description: "Visit Amber Fort, City Palace, and Hawa Mahal.",
+          },
+          {
+            title: "Day 3: Jaipur to Jodhpur",
+            description: "Drive to Jodhpur and explore Mehrangarh Fort.",
+          },
+          {
+            title: "Day 4: Jodhpur to Udaipur",
+            description: "Travel to Udaipur and enjoy the Lake Pichola.",
+          },
+          {
+            title: "Day 5: Sightseeing in Udaipur",
+            description:
+              "Visit City Palace, Jagdish Temple, and Saheliyon-ki-Bari.",
+          },
+          {
+            title: "Day 6: Udaipur to Jaipur",
+            description: "Return to Jaipur for leisure time.",
+          },
+          {
+            title: "Day 7: Departure from Jaipur",
+            description: "Check out and departure.",
+          },
+        ],
       },
       {
-        name: "7 Dyas Summer Bike Trip",
+        id: "rajasthan-2",
+        name: "7 Days Summer Bike Trip",
         price: 22000,
         duration: "6N/7D",
-        description: "Pangong - Hanle - Diskit",
+        description: "Jaipur - Jodhpur - Udaipur",
         image: "/tour-1.jpg",
+        faqs: [
+          {
+            question: "What should I pack?",
+            answer: "You should pack casual clothes, biking gear, and shoes.",
+          },
+          {
+            question: "Is there a guide?",
+            answer: "Yes, there will be a guide for the entire trip.",
+          },
+        ],
+        inclusions: [
+          "3 Star Hotel",
+          "Meal Plan: Breakfast , Dinner",
+          "Taxi: non Ac private cab",
+          "Tour assistance",
+          "No other clients",
+          "Totally private tour",
+        ],
+        exclusions: [
+          "Additional vehicles",
+          "Activities (Camel ride, ATV, etc.)",
+          "Any personal expenses at Hotel or Outside.",
+          "Entry fees or tickets.",
+          "GST will be applicable as per prevailing rates",
+        ],
+        itinerary: [
+          {
+            title: "Day 1: Arrival and Welcome",
+            description: "Welcome to Jaipur",
+          },
+          {
+            title: "Day 2: Sightseeing in Jaipur",
+            description: "Visit Amber Fort, City Palace, and Hawa Mahal.",
+          },
+          {
+            title: "Day 3: Jaipur to Jodhpur",
+            description: "Drive to Jodhpur and explore Mehrangarh Fort.",
+          },
+          {
+            title: "Day 4: Jodhpur to Udaipur",
+            description: "Travel to Udaipur and enjoy the Lake Pichola.",
+          },
+          {
+            title: "Day 5: Sightseeing in Udaipur",
+            description:
+              "Visit City Palace, Jagdish Temple, and Saheliyon-ki-Bari.",
+          },
+          {
+            title: "Day 6: Udaipur to Jaipur",
+            description: "Return to Jaipur for leisure time.",
+          },
+          {
+            title: "Day 7: Departure from Jaipur",
+            description: "Check out and departure.",
+          },
+        ],
       },
       {
-        name: "7 Dyas Summer Bike Trip",
+        id: "rajasthan-3",
+        name: "7 Days Summer Bike Trip",
         price: 22000,
         duration: "6N/7D",
-        description: "Pangong - Hanle - Diskit",
+        description: "Jaipur - Jodhpur - Udaipur",
         image: "/tour-1.jpg",
+        faqs: [
+          {
+            question: "What should I pack?",
+            answer: "You should pack casual clothes, biking gear, and shoes.",
+          },
+          {
+            question: "Is there a guide?",
+            answer: "Yes, there will be a guide for the entire trip.",
+          },
+        ],
+        inclusions: [
+          "3 Star Hotel",
+          "Meal Plan: Breakfast , Dinner",
+          "Taxi: non Ac private cab",
+          "Tour assistance",
+          "No other clients",
+          "Totally private tour",
+        ],
+        exclusions: [
+          "Additional vehicles",
+          "Activities (Camel ride, ATV, etc.)",
+          "Any personal expenses at Hotel or Outside.",
+          "Entry fees or tickets.",
+          "GST will be applicable as per prevailing rates",
+        ],
+        itinerary: [
+          {
+            title: "Day 1: Arrival and Welcome",
+            description: "Welcome to Jaipur",
+          },
+          {
+            title: "Day 2: Sightseeing in Jaipur",
+            description: "Visit Amber Fort, City Palace, and Hawa Mahal.",
+          },
+          {
+            title: "Day 3: Jaipur to Jodhpur",
+            description: "Drive to Jodhpur and explore Mehrangarh Fort.",
+          },
+          {
+            title: "Day 4: Jodhpur to Udaipur",
+            description: "Travel to Udaipur and enjoy the Lake Pichola.",
+          },
+          {
+            title: "Day 5: Sightseeing in Udaipur",
+            description:
+              "Visit City Palace, Jagdish Temple, and Saheliyon-ki-Bari.",
+          },
+          {
+            title: "Day 6: Udaipur to Jaipur",
+            description: "Return to Jaipur for leisure time.",
+          },
+          {
+            title: "Day 7: Departure from Jaipur",
+            description: "Check out and departure.",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    state: "Andaman and Nicobar Islands",
+    packages: [
+      {
+        id: "andaman-1",
+        name: "Week in Andaman",
+        price: 22000,
+        duration: "5N/6D",
+        description: "Port Blair - Havelock - Neil Island",
+        image: "/andaman.jpg",
+        faqs: [
+          {
+            question: "What should I pack?",
+            answer: "Pack beachwear, sunscreen, and casual clothing.",
+          },
+          {
+            question: "Are water activities included?",
+            answer: "Yes, some basic water activities are included.",
+          },
+        ],
+        inclusions: [
+          "3 Star Hotel",
+          "Meal Plan: Breakfast , Dinner",
+          "Taxi: non Ac private cab",
+          "Tour assistance",
+          "No other clients",
+          "Totally private tour",
+        ],
+        exclusions: [
+          "Additional activities",
+          "Personal expenses at Hotel or outside",
+          "Entry fees or tickets",
+          "GST as per prevailing rates",
+        ],
+        itinerary: [
+          {
+            title: "Day 1: Arrival at Port Blair",
+            description: "Welcome to Andaman, visit Cellular Jail.",
+          },
+          {
+            title: "Day 2: Port Blair to Havelock",
+            description: "Travel to Havelock Island, visit Radhanagar Beach.",
+          },
+          {
+            title: "Day 3: Havelock Island",
+            description: "Enjoy snorkeling and water activities.",
+          },
+          {
+            title: "Day 4: Havelock to Neil Island",
+            description: "Travel to Neil Island, visit natural bridges.",
+          },
+          {
+            title: "Day 5: Neil Island to Port Blair",
+            description: "Return to Port Blair, shopping and leisure.",
+          },
+          {
+            title: "Day 6: Departure",
+            description: "Check out and departure.",
+          },
+        ],
       },
     ],
   },

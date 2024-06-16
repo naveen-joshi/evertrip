@@ -10,6 +10,7 @@ interface Package {
   duration: string;
   description: string;
   image: string;
+  id: string;
 }
 
 interface Tour {
@@ -41,7 +42,7 @@ const Tours = () => {
           {states.map((state) => (
             <a
               key={state}
-              className={`px-4 py-2 text-sm font-medium bg-white border border-gray-200 rounded-s-lg hover:bg-gray-100 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 ${selectedState === state ? "bg-blue-700 text-white hover:bg-blue-700" : ""}`}
+              className={`px-4 py-2 text-sm font-medium bg-white border border-gray-200 rounded-s-lg hover:bg-gray-100 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 ${selectedState === state ? "bg-blue-700  hover:bg-blue-700" : ""}`}
               onClick={() => setSelectedState(state)}
             >
               {state}
@@ -86,6 +87,7 @@ const Tours = () => {
               description={pkg.description}
               imageSrc={pkg.image}
               duration={pkg.duration}
+              id={pkg.id}
             />
           </div>
         ))}
