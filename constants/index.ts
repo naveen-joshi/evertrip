@@ -123,15 +123,27 @@ export const tours = [
         itinerary: [
           {
             title: "Day 1: Arrival and Welcome",
-            description: "Welcome to Leh Ladakh",
+            description:
+              "Upon arrival at the Leh Airport, you will be received by our representative and transferred to your hotel. Enjoy simple and light lunch today at your respective hotels. Since you are arriving at 11000 ft, we strongly recommend taking complete rest and drink ample water on the first day where you should not indulge yourself in any strenuous activity. Rest of the day is free to acclimatize to the high altitude of Leh. Overnight stay at hote",
+            hotels:
+              "Hotel - Jeevnam Villa/ The Mogol/ Ladakh Heaven/Similar in Leh",
+            meals: "Lunch and Dinner",
           },
           {
             title: "Day 2: Sightseeing in Leh",
-            description: "Visit Shanti Stupa, Leh Palace, and local markets.",
+            description:
+              "Sham Valley Tour - Hall Of Fame, Magnetic Hill, Gurudwara Pathar Sahib and Sangam After breakfast, we will drive alongside bank of Indus river till Sangam, to witness the the conflicts of Zanskar river and Indus River. En-route we will be visiting Gurdwara Pathar Sahib, Magnetic Hill (where the cars defy gravity) and Hall of Fame (which has a museum of the Kargil War memorabilia). Later in the afternoon visit Shanti Stupa. and Hall of Fame (which has a museum of the Kargil War memorabilia). Later in the afternoon visit Shanti Stupa. Return to your hotel and relax for the day. Overnight stay at the hotel.",
+            meals: "Breakfast, Lunch (Local Restaurant) and Dinner",
+            hotels:
+              "Hotel - Jeevnam Villa/ The Mogol/ Ladakh Heaven/Similar in Leh",
           },
           {
             title: "Day 3: Leh to Nubra Valley",
-            description: "Drive to Nubra Valley via Khardung La Pass.",
+            description:
+              "Today post breakfast check out of the hotel and we will start our journey to Nubra Valley through Khardungla, which is the World's highest motor able road at 18,832 feet above sea level. At Khardungla pass the snow-capped peaks and the mountain views are amazing. The road then passes through a bridge laid on Glacier which finds its way in Guinness Book of world records. Drive through the Valley which is extremely beautiful for photography.Nubra Valley is the Oasis of Ladakh as you see some colourful trees in this region. Check in and enjoy your lunch. Nubra Valley is the Oasis of Ladakh as you see some colourful trees in this region. Check in and enjoy your lunch. Post lunch visit the Hunder sand dunes and get the sight of the Double Hump Bactrian camels (camel ride to be on direct payment basis), enjoy leisure time at the Sand Dunes of Nubra valley spread across Hundur Village. Later in the evening, return to your respective camps. Overnight stay at the camp.",
+            hotels:
+              "Hotel - Alpen Glow Camp/ Mountain Camp/ Nubra Delight Camp /Similar in Nubra Valley",
+            meals: "Breakfast, Lunch (Local Restaurant) and Dinner",
           },
           {
             title: "Day 4: Nubra Valley to Pangong Lake",

@@ -84,22 +84,18 @@ const AboutUs = () => {
             />
           </div>
           <div className="flex gap-4">
-            <RadioGroup defaultValue="comfortable">
-              <div className="flex items-center gap-2">
-                <div className="flex items-center space-x-2">
-                  <RadioGroupItem value="default" id="r1" />
-                  <label htmlFor="r1">Default</label>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <RadioGroupItem value="comfortable" id="r2" />
-                  <label>Comfortable</label>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <RadioGroupItem value="compact" id="r3" />
-                  <label>Compact</label>
-                </div>
-              </div>
-            </RadioGroup>
+            <select
+              id="countries"
+              className=" border-gray-300  text-sm focus:ring-blue-500 focus:border-blue-500 h-11 w-full min-w-[300px] rounded-md border bg-background text-[#585757] px-3 py-2 flex-1"
+            >
+              <option selected disabled>
+                Select Preferred Destination
+              </option>
+              <option value="andaman">Andaman & Nicobar Island</option>
+              <option value="kashmir">Kashmir</option>
+              <option value="ladakh">Ladakh</option>
+              <option value="rajasthan">Rajasthan</option>
+            </select>
             <DatePickerWithRange />
           </div>
           <input

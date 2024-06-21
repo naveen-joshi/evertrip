@@ -4,7 +4,7 @@ const SocialLinks = () => {
   return (
     <div className="fixed right-3 bottom-3 flex flex-col items-center gap-2 space-x-4">
       <a
-        href="https://wa.me/917375858968?text=Hi"
+        href="https://wa.me/+919653810555?text=Hi"
         target="_blank"
         className="bg-[#DCFCE7] z-10 rounded-full p-2"
         rel="noreferrer"
