@@ -12,7 +12,7 @@ const Hero = () => {
             <span className="font-bold">Evertrip's</span> expertly curated
             tours.
           </p>
-          <a href="#about_us" className="inline-flex btn-primary">
+          <a href="#contact_us" className="inline-flex btn-primary">
             Enquire Now
           </a>
         </div>

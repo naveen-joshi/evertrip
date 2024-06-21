@@ -68,7 +68,7 @@ export const FOOTER_CONTACT_INFO = {
   title: "Contact Us",
   links: [
     { label: "Phone", value: "+91-9653810555" },
-    { label: "Email", value: "sahil@evertrip.com" },
+  { label: "Email", value: "salesevertrip1@gmail.com" },
   ],
 };
 
