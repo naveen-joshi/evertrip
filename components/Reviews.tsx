@@ -6,7 +6,7 @@ const Reviews = () => {
         <span className="evertrip-text">Evertrip</span>
       </h2>
 
-      <div className="my-4 flex gap-6">
+      <div className="my-4 flex flex-col md:flex-row gap-6">
         <div className="bg-white rounded shadow-md p-4">
           <div className="flex gap-6 items-center mb-6">
             <div className="w-16 h-16 rounded-full bg-slate-500 flex items-center justify-center">
