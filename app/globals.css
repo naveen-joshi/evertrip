@@ -238,3 +238,8 @@ body {
     #ffcc70 100%
   );
 }
+
+.card-border {
+  border: 2px solid;
+  border-image: linear-gradient(to right, darkblue, darkorchid) 1;
+}

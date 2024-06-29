@@ -1,16 +1,27 @@
+"use client";
+
 import { NAV_LINKS } from "@/constants";
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
 import { FaPhone, FaBars } from "react-icons/fa6";
 
 const Navbar = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
     <nav className="flex items-center justify-between max-container padding-container relative z-30">
       <Link href="/">
         <Image src="/logo.png" alt="logo" width={74} height={29} />
       </Link>
 
-      <ul className="hidden h-full gap-12 lg:flex items-center">
+      <ul
+        className={`h-full lg:gap-12 items-center lg:flex ${isMenuOpen ? "flex flex-col gap-4 p-4 absolute top-16 left-0 right-0 bg-white shadow-md lg:static lg:p-0 z-10 h-[260px]" : "hidden"} lg:flex-row`}
+      >
         {NAV_LINKS.map((link) => (
           <Link
             href={link.href}
@@ -28,7 +39,10 @@ const Navbar = () => {
         </Link>
       </ul>
 
-      <FaBars className="w-8 h-8 inline-block cursor-pointer lg:hidden" />
+      <FaBars
+        className="w-8 h-8 inline-block cursor-pointer lg:hidden"
+        onClick={toggleMenu}
+      />
     </nav>
   );
 };

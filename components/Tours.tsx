@@ -85,7 +85,7 @@ const Tours = () => {
               title={pkg.name}
               price={pkg.price}
               description={pkg.description}
-              imageSrc={pkg.image}
+              thumbnail={pkg.thumbnail}
               duration={pkg.duration}
               id={pkg.id}
             />

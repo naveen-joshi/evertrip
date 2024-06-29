@@ -2,6 +2,8 @@ import { FOOTER_CONTACT_INFO, FOOTER_LINKS, SOCIALS } from "@/constants";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import { FaPhone, FaLocationDot } from "react-icons/fa6";
+import { CiMail } from "react-icons/ci";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -47,7 +49,7 @@ const Footer = () => {
             <div className="flex flex-col gap-5">
               <h4 className="bold-18 whitespace-nowrap">Office Address</h4>
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62189.297031504386!2d77.59631590000001!3d13.046422899999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae17844fe8dd13%3A0x51ef49dacec88f42!2sSrinidhi%20Scintila%20Apartments!5e0!3m2!1sen!2sin!4v1717851139114!5m2!1sen!2sin"
+                src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3556.6810633688824!2d75.8016393754406!3d26.945323676627776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjbCsDU2JzQzLjIiTiA3NcKwNDgnMTUuMiJF!5e0!3m2!1sen!2sin!4v1719663045412!5m2!1sen!2sin"
                 width="400"
                 height="300"
                 style={{ border: "0" }}

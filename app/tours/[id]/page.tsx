@@ -26,7 +26,8 @@ interface Package {
   price: number;
   duration: string;
   description: string;
-  image: string;
+  cover: string;
+  thumbnail: string;
   faqs: FAQ[];
   inclusions: string[];
   exclusions: string[];
@@ -63,10 +64,15 @@ const DetailsPage: React.FC = () => {
   return (
     <section className="bg-[#f2fdff]">
       <div className="container mx-auto p-4 max-container padding-container">
-        <h2 className="text-2xl font-bold mb-4">
+        <img
+          src={tripDetails.cover}
+          alt=""
+          className="rounded-xl w-full h-[60dvh]"
+        />
+        <h2 className="text-2xl font-bold mb-2 mt-2 text-center evertrip-text">
           {tripDetails.name} - &#8377;{tripDetails.price}
         </h2>
-        <p className="mb-4">
+        <p className="mb-4 text-center">
           <span className="font-semibold">Popular Locations: </span>{" "}
           {tripDetails.description}
         </p>

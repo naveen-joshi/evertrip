@@ -49,7 +49,7 @@ const AboutUs = () => {
         </h2>
 
         <div className="flex flex-col gap-4 my-4">
-          <div className="flex gap-4">
+          <div className="flex flex-col gap-4 md:flex-row">
             <input
               type="text"
               className={inputClass}
@@ -67,7 +67,7 @@ const AboutUs = () => {
               required
             />
           </div>
-          <div className="flex gap-4">
+          <div className="flex flex-col gap-4 md:flex-row">
             <input
               type="email"
               className={inputClass}
@@ -83,10 +83,10 @@ const AboutUs = () => {
               onChange={(e) => setnoTravellers(e.target.value)}
             />
           </div>
-          <div className="flex gap-4">
+          <div className="flex flex-col gap-4 md:flex-row">
             <select
               id="countries"
-              className=" border-gray-300  text-sm focus:ring-blue-500 focus:border-blue-500 h-11 w-full min-w-[300px] rounded-md border bg-background text-[#585757] px-3 py-2 flex-1"
+              className="border-gray-300 text-sm focus:ring-blue-500 focus:border-blue-500 h-11 w-full min-w-[300px] rounded-md border bg-background text-[#585757] px-3 py-2 flex-1"
             >
               <option selected disabled>
                 Select Preferred Destination
