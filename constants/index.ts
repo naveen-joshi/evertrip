@@ -96,7 +96,7 @@ export const tours = [
         name: "6 Days Summer Trip",
         price: 58999,
         duration: "5N/6D",
-        description: "Pangong - Hanle - Diskit",
+        description: "Pangong - Leh - Diskit",
         cover: "/ladakh_1.jpeg",
         thumbnail: "/ladakh_1_thumbnail.jpg",
         faqs: [
@@ -169,7 +169,7 @@ export const tours = [
         name: "7 Days Summer Trip",
         price: 63720,
         duration: "6N/7D",
-        description: "Pangong - Hanle - Diskit",
+        description: "Pangong - Turtuk - Diskit",
         cover: "/ladakh_2.jpeg",
         thumbnail: "/ladakh_2_thumbnail.jpg",
         faqs: [
