@@ -42,10 +42,10 @@ const Tours = () => {
           {states.map((state, index) => (
             <a
               key={state}
-              className={`px-4 py-2 text-sm font-medium bg-white border border-gray-200 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700
-                ${selectedState === state ? "bg-red-600 text-white" : ""}
-                ${index === 0 ? "rounded-t-lg md:rounded-l-lg md:rounded-r-none" : ""}
-                ${index === states.length - 1 ? "rounded-b-lg md:rounded-r-lg md:rounded-l-none" : ""}`}
+              className={`px-4 py-2 text-sm font-medium border border-gray-200 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700
+                ${selectedState === state ? "bg-red-600 text-white" : "bg-white"}
+                ${index === 0 ? "rounded-s-lg md:rounded-l-lg md:rounded-r-none" : ""}
+                ${index === states.length - 1 ? "rounded-b-lg md:rounded-e-lg md:rounded-l-none" : ""}`}
               onClick={() => setSelectedState(state)}
             >
               {state}
