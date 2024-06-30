@@ -96,7 +96,7 @@ const AboutUs = () => {
               id="countries"
               value={destination}
               onChange={(e) => setDestination(e.target.value)}
-              className="border-gray-300 text-sm focus:ring-blue-500 focus:border-blue-500 h-11 w-full min-w-[300px] rounded-md border bg-background text-[#585757] px-3 py-2 flex-1"
+              className={inputClass}
             >
               <option defaultValue={"andaman"} disabled>
                 Select Preferred Destination
@@ -106,7 +106,14 @@ const AboutUs = () => {
               <option value="ladakh">Ladakh</option>
               <option value="rajasthan">Rajasthan</option>
             </select>
-            <DatePickerWithRange />
+            <input
+              type="date"
+              className={inputClass}
+              placeholder="Travel Date"
+              value={travelDate}
+              onChange={(e) => settravelDate(e.target.value)}
+              required
+            />
           </div>
           <input
             type="text"
