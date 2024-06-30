@@ -93,9 +93,9 @@ export const tours = [
     packages: [
       {
         id: "ladakh-1",
-        name: "7 Days Summer Bike Trip",
+        name: "6 Days Summer Trip",
         price: 58999,
-        duration: "6N/7D",
+        duration: "5N/6D",
         description: "Pangong - Hanle - Diskit",
         cover: "/ladakh_1.jpeg",
         thumbnail: "/ladakh_1_thumbnail.jpg",
@@ -155,12 +155,8 @@ export const tours = [
             description: "Travel to Pangong Lake and enjoy the scenic beauty.",
           },
           {
-            title: "Day 5: Pangong Lake to Hanle",
-            description: "Journey to Hanle, visit Hanle Monastery.",
-          },
-          {
-            title: "Day 6: Hanle to Diskit",
-            description: "Drive to Diskit, explore Diskit Monastery.",
+            title: "Day 5: Pangong Lake to Leh",
+            description: "Journey from Pangong Lake to Leh.",
           },
           {
             title: "Day 7: Departure from Leh",
@@ -170,7 +166,7 @@ export const tours = [
       },
       {
         id: "ladakh-2",
-        name: "7 Days Summer Bike Trip",
+        name: "7 Days Summer Trip",
         price: 63720,
         duration: "6N/7D",
         description: "Pangong - Hanle - Diskit",
@@ -228,16 +224,17 @@ export const tours = [
             meals: "Breakfast, Lunch (Local Restaurant) and Dinner",
           },
           {
-            title: "Day 4: Nubra Valley to Pangong Lake",
-            description: "Travel to Pangong Lake and enjoy the scenic beauty.",
+            title: "Day 4: Nubra Valley to Turtuk",
+            description:
+              "Travel to Turtuk and explore the vilage and culture. Head back to Nubra towards end of the day.",
           },
           {
-            title: "Day 5: Pangong Lake to Hanle",
-            description: "Journey to Hanle, visit Hanle Monastery.",
+            title: "Day 5: Nubra to Pangong",
+            description: "Journey to Mighty Pangong Lake thourgh Scenic Route.",
           },
           {
-            title: "Day 6: Hanle to Diskit",
-            description: "Drive to Diskit, explore Diskit Monastery.",
+            title: "Day 6: Pangong to Leh",
+            description: "Drive towards Leh.",
           },
           {
             title: "Day 7: Departure from Leh",
@@ -524,7 +521,7 @@ export const tours = [
       {
         id: "andaman-1",
         name: "Week in Andaman",
-        price: 22000,
+        price: 44999,
         duration: "5N/6D",
         description: "Port Blair - Havelock - Neil Island",
         cover: "/andaman.jpg",
