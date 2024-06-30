@@ -38,50 +38,25 @@ const Tours = () => {
         <span className="evertrip-text">Evertrip's</span> Tours
       </h2>
       <div className="flex items-center justify-center mt-2">
-        <div className="inline-flex rounded-md shadow-sm">
-          {states.map((state) => (
+        <div className="inline-flex flex-wrap rounded-md shadow-sm">
+          {states.map((state, index) => (
             <a
               key={state}
-              className={`px-4 py-2 text-sm font-medium bg-white border border-gray-200 rounded-s-lg hover:bg-gray-100 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700 ${selectedState === state ? "bg-blue-700  hover:bg-blue-700" : ""}`}
+              className={`px-4 py-2 text-sm font-medium bg-white border border-gray-200 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700
+                ${selectedState === state ? "bg-red-600 text-white" : ""}
+                ${index === 0 ? "rounded-t-lg md:rounded-l-lg md:rounded-r-none" : ""}
+                ${index === states.length - 1 ? "rounded-b-lg md:rounded-r-lg md:rounded-l-none" : ""}`}
               onClick={() => setSelectedState(state)}
             >
               {state}
             </a>
           ))}
-
-          {/* <a
-            href="#"
-            aria-current="page"
-            className="px-4 py-2 text-sm font-medium text-blue-700 bg-white border border-gray-200 rounded-s-lg hover:bg-gray-100 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700"
-          >
-            All
-          </a>
-          <a
-            href="#"
-            className="px-4 py-2 text-sm font-medium text-gray-900 bg-white border-t border-b border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700"
-          >
-            Leh & Ladakh
-          </a>
-          <a
-            href="#"
-            className="px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-e-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700"
-          >
-            Rajasthan
-          </a>
-          <a
-            href="#"
-            className="px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-e-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-blue-700 focus:text-blue-700"
-          >
-            Himachal Pradesh
-          </a> */}
         </div>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {filteredTours.map((pkg, index) => (
           <div key={index} className="m-4">
-            {/* <h2 className="text-2xl font-bold mb-4">{tour.state}</h2> */}
             <Card
-              key={index}
               title={pkg.name}
               price={pkg.price}
               description={pkg.description}

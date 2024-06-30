@@ -18,7 +18,15 @@ const AboutUs = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
-    const formData = { name, contactNumber, email, message };
+    const formData = {
+      name,
+      contactNumber,
+      email,
+      message,
+      noTravellers,
+      destination,
+      travelDate,
+    };
 
     try {
       const response = await fetch("/api/send-email", {
@@ -86,9 +94,11 @@ const AboutUs = () => {
           <div className="flex flex-col gap-4 md:flex-row">
             <select
               id="countries"
+              value={destination}
+              onChange={(e) => setDestination(e.target.value)}
               className="border-gray-300 text-sm focus:ring-blue-500 focus:border-blue-500 h-11 w-full min-w-[300px] rounded-md border bg-background text-[#585757] px-3 py-2 flex-1"
             >
-              <option selected disabled>
+              <option defaultValue={"andaman"} disabled>
                 Select Preferred Destination
               </option>
               <option value="andaman">Andaman & Nicobar Island</option>
