@@ -381,8 +381,8 @@ export const tours = [
         price: 69770,
         duration: "6N/7D",
         description: "Jaipur - Jodhpur - Udaipur",
-        cover: "/rajasthan_1.jpg",
-        thumbnail: "/rajasthan_1_thumbnail.jpg",
+        cover: "/jodhpur_1.jpg",
+        thumbnail: "/jodhpur_1_thumbnail.jpg",
         faqs: [
           {
             question: "What should I pack?",
@@ -453,8 +453,8 @@ export const tours = [
         price: 51620,
         duration: "5N/6D",
         description: "Jaipur - Udaipur - Mount Abu",
-        cover: "/rajasthan_3.jpeg",
-        thumbnail: "/rajasthan_3_thumbnail.jpg",
+        cover: "/rajasthan_2.jpg",
+        thumbnail: "/rajasthan_2_thumbnail.jpg",
         faqs: [
           {
             question: "What should I pack?",
