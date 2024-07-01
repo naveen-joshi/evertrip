@@ -42,7 +42,7 @@ export default function Home() {
       <Hero />
       <Tours />
       <Features />
-      <Reviews />
+      {/* <Reviews /> */}
       <AboutUs />
     </>
   );
